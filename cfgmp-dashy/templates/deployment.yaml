@@ -16,8 +16,8 @@ spec:
       {{- with .Values.podAnnotations }}
       annotations:
         #{{- toYaml . | nindent 8 }}
-        rollme: {{ randAlphaNum 5 | quote }}
-        #checksum/config: {{ include (print $.Template.BasePath "../config/conf.yaml") . | sha256sum }}
+        #rollme: {{ randAlphaNum 5 | quote }}
+        checksum/config: {{ include (print $.Template.BasePath "../config/conf.yaml") . | sha256sum }}
         #checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
       {{- end }}
       labels:
