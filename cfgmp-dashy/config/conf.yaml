@@ -4,7 +4,7 @@ pageInfo:
   title: Dashy42
   description: Welcome to your new dashboard!
   navLinks:
-  - title: GitHub
+  - title: GitHub42
     path: https://github.com/Lissy93/dashy
   - title: Documentation
     path: https://dashy.to/docs
